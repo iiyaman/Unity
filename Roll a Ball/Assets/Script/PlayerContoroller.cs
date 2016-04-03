@@ -21,5 +21,11 @@ public class PlayerContoroller : MonoBehaviour
 
 		// xとyにspeedを掛ける
 		rigidbody.AddForce(x * speed, 0, z * speed);
+		if (Input.GetKey (KeyCode.Space))
+		{
+			rigidbody.AddForce (0, 50, 0);
+
+		}
+
 	}
 }
